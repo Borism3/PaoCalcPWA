@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <button onclick="navigate('screen1')">Dia Normal</button>
+        <button onclick="navigate('screen2')">Aguinaldo</button>
+    </div>
+
+    <div id="screen1" class="screen">
+        <h2>Dia Normal</h2>
+        <label>Horas: <input type="number" id="input1-1" oninput="calculate('screen1')"></label>
+        <br></br>
+        <label>Precio Real: <input type="number" id="input1-2" oninput="calculate('screen1')"></label>
+        <br></br>
+        <label>Precio Oficial: <input type="number" id="input1-3" oninput="calculate('screen1')"></label><br></br>
+        <label>Antiguedad: <input type="number" id="input1-4" oninput="calculate('screen1')"></label><br></br>
+        <label>Colectivo: <input type="number" id="input1-5" oninput="calculate('screen1')"></label><br></br>
+
+        <div>Total: <span id="result1-1">0</span></div><br></br>
+        <div>Transferencia: <span id="result1-2">0</span></div><br></br>
+        <div>Efectivo: <span id="result1-3">0</span></div><br></br>
+    </div>
+
+    <div id="screen2" class="screen">
+        <h2>Aguinaldo</h2>
+        <label>Horas del mes: <input type="number" id="input2-1" oninput="calculate('screen2')"></label><br></br>
+        <label>Precio Real: <input type="number" id="input2-2" oninput="calculate('screen2')"></label><br></br>
+        <label>Precio Oficial: <input type="number" id="input2-3" oninput="calculate('screen2')"></label><br></br>
+        <label>Antiguedad: <input type="number" id="input2-4" oninput="calculate('screen2')"></label><br></br>
+
+        <div>Total: <span id="result2-1">0</span></div><br></br>
+        <div>Transferencia: <span id="result2-2">0</span></div><br></br>
+        <div>Efectivo: <span id="result2-3">0</span></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

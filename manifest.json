@@ -1,0 +1,9 @@
+{
+    "name": "Numeric Fields PWA",
+    "short_name": "NumPWA",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "description": "A simple PWA with editable numeric fields.",
+    "theme_color": "#000000"
+}
